@@ -1,0 +1,310 @@
+.root {
+    -fx-font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", sans-serif;
+    -aniflow-bg: #ffffff;
+    -aniflow-surface: rgba(255, 255, 255, 0.76);
+    -aniflow-surface-2: #f6f7fb;
+    -aniflow-text: #111217;
+    -aniflow-muted: #707684;
+    -aniflow-stroke: rgba(17, 18, 23, 0.08);
+    -aniflow-accent-start: #4158D0;
+    -aniflow-accent-end: #C850C0;
+    -aniflow-glass: rgba(255, 255, 255, 0.38);
+    -fx-background-color:
+        radial-gradient(center 15% 8%, radius 100%, rgba(65, 88, 208, 0.08), transparent),
+        linear-gradient(to bottom right, #ffffff, #f7f9ff);
+}
+
+.dark-mode {
+    -aniflow-bg: #000000;
+    -aniflow-surface: rgba(22, 22, 24, 0.86);
+    -aniflow-surface-2: #17181d;
+    -aniflow-text: #f3f5fa;
+    -aniflow-muted: #9ba1ac;
+    -aniflow-stroke: rgba(255, 255, 255, 0.12);
+    -aniflow-glass: rgba(255, 255, 255, 0.12);
+    -fx-background-color:
+        radial-gradient(center 18% 10%, radius 110%, rgba(65, 88, 208, 0.22), transparent),
+        linear-gradient(to bottom right, #050507, #000000);
+}
+
+.main-shell {
+    -fx-background-color: transparent;
+}
+
+.sidebar {
+    -fx-background-color: rgba(255, 255, 255, 0.35);
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.12), 32, 0.2, 0, 0);
+}
+
+.dark-mode .sidebar {
+    -fx-background-color: rgba(20, 20, 24, 0.72);
+    -fx-border-color: rgba(255, 255, 255, 0.09);
+}
+
+.logo-badge {
+    -fx-min-width: 42;
+    -fx-min-height: 42;
+    -fx-background-radius: 21;
+    -fx-background-color: linear-gradient(to bottom right, -aniflow-accent-start, -aniflow-accent-end);
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-alignment: center;
+}
+
+.dock-button {
+    -fx-min-width: 44;
+    -fx-min-height: 44;
+    -fx-background-radius: 22;
+    -fx-background-color: -aniflow-surface;
+    -fx-text-fill: -aniflow-text;
+    -fx-border-color: -aniflow-stroke;
+    -fx-border-radius: 22;
+    -fx-cursor: hand;
+}
+
+.dock-button .ikonli-font-icon {
+    -fx-icon-color: -aniflow-text;
+}
+
+.dock-button.active {
+    -fx-background-color: linear-gradient(to bottom right, -aniflow-accent-start, -aniflow-accent-end);
+    -fx-border-color: transparent;
+}
+
+.dock-button.active .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+.large-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -aniflow-text;
+}
+
+.offline-chip {
+    -fx-background-color: rgba(255, 96, 96, 0.22);
+    -fx-border-color: rgba(255, 96, 96, 0.5);
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-padding: 6 12;
+    -fx-text-fill: #ff4e4e;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
+
+.pill-button,
+.related-pill,
+.combo-box,
+.text-field,
+.text-area {
+    -fx-background-color: -aniflow-surface;
+    -fx-border-color: -aniflow-stroke;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-text-fill: -aniflow-text;
+}
+
+.pill-button,
+.related-pill {
+    -fx-padding: 8 14;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.related-pill {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+
+.bottom-player-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.62);
+    -fx-border-color: -aniflow-stroke;
+    -fx-border-width: 1 0 0 0;
+}
+
+.dark-mode .bottom-player-bar {
+    -fx-background-color: rgba(16, 16, 19, 0.75);
+}
+
+.player-mini-icon {
+    -fx-background-color: linear-gradient(to bottom right, -aniflow-accent-start, -aniflow-accent-end);
+    -fx-text-fill: white;
+    -fx-padding: 5 10;
+    -fx-background-radius: 12;
+    -fx-font-weight: 700;
+}
+
+.player-mini-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: -aniflow-text;
+}
+
+.transparent-scroll,
+.horizontal-scroll {
+    -fx-background-color: transparent;
+}
+
+.transparent-scroll > .viewport,
+.horizontal-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.trending-banner {
+    -fx-background-color: linear-gradient(to bottom right, -aniflow-accent-start, -aniflow-accent-end);
+    -fx-background-radius: 26;
+    -fx-border-radius: 26;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.24), 24, 0.18, 0, 6);
+}
+
+.banner-shade {
+    -fx-background-color: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
+    -fx-background-radius: 26;
+}
+
+.banner-title {
+    -fx-text-fill: white;
+    -fx-font-size: 34px;
+    -fx-font-weight: 800;
+}
+
+.banner-subtitle {
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+    -fx-font-size: 13px;
+}
+
+.pull-hint,
+.section-title,
+.subtle-text,
+.player-status,
+.card-meta,
+.card-meta-secondary,
+.profile-subtitle {
+    -fx-text-fill: -aniflow-muted;
+}
+
+.section-title {
+    -fx-font-size: 21px;
+    -fx-font-weight: 700;
+    -fx-text-fill: -aniflow-text;
+}
+
+.anime-card {
+    -fx-background-color: -aniflow-surface;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: -aniflow-stroke;
+    -fx-cursor: hand;
+}
+
+.poster-pane,
+.poster-fallback {
+    -fx-background-radius: 20;
+}
+
+.poster-fallback {
+    -fx-background-color: linear-gradient(to bottom right, rgba(65, 88, 208, 0.6), rgba(200, 80, 192, 0.6));
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+}
+
+.score-badge {
+    -fx-background-color: rgba(0, 0, 0, 0.56);
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 4 8;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+}
+
+.card-title {
+    -fx-text-fill: -aniflow-text;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+}
+
+.glass-search {
+    -fx-padding: 12 14;
+    -fx-background-color: -aniflow-glass;
+    -fx-border-color: -aniflow-stroke;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 16, 0.18, 0, 4);
+}
+
+.search-input {
+    -fx-background-color: transparent;
+    -fx-text-fill: -aniflow-text;
+    -fx-prompt-text-fill: -aniflow-muted;
+}
+
+.chip-filter {
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-padding: 6 12;
+}
+
+.player-title,
+.profile-name {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: -aniflow-text;
+}
+
+.description-box {
+    -fx-background-color: -aniflow-surface;
+    -fx-text-fill: -aniflow-text;
+    -fx-border-color: -aniflow-stroke;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+
+.video-container {
+    -fx-background-color: #0c0d11;
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+}
+
+.video-placeholder {
+    -fx-text-fill: rgba(255, 255, 255, 0.6);
+    -fx-font-size: 16px;
+}
+
+.player-controls-shell,
+.settings-box {
+    -fx-background-color: -aniflow-surface;
+    -fx-border-color: -aniflow-stroke;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+
+.offline-banner {
+    -fx-background-color: rgba(65, 88, 208, 0.14);
+    -fx-border-color: rgba(65, 88, 208, 0.32);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 12;
+    -fx-text-fill: -aniflow-text;
+}
+
+.profile-list {
+    -fx-background-color: transparent;
+}
+
+.profile-list .list-cell {
+    -fx-background-color: -aniflow-surface-2;
+    -fx-text-fill: -aniflow-text;
+    -fx-background-radius: 12;
+    -fx-padding: 8 10;
+}
+
+.profile-list .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, rgba(65, 88, 208, 0.26), rgba(200, 80, 192, 0.2));
+}
+
+.ios-spinner {
+    -fx-progress-color: linear-gradient(to right, -aniflow-accent-start, -aniflow-accent-end);
+}

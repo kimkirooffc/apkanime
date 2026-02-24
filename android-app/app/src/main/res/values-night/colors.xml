@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gradient_start">#4158D0</color>
+    <color name="gradient_end">#C850C0</color>
+    <color name="primary">#4158D0</color>
+    <color name="primaryVariant">#C850C0</color>
+    <color name="secondary">#C850C0</color>
+
+    <color name="background">#0A0C10</color>
+    <color name="surface">#1A1E2A</color>
+    <color name="surfaceVariant">#252B3A</color>
+    <color name="onSurface">#FFFFFF</color>
+    <color name="onSurfaceVariant">#9CA3AF</color>
+    <color name="stroke">#2D3345</color>
+
+    <color name="background_dark">#0A0C10</color>
+    <color name="surface_dark">#1A1E2A</color>
+    <color name="surfaceVariant_dark">#252B3A</color>
+    <color name="onSurface_dark">#FFFFFF</color>
+    <color name="onSurfaceVariant_dark">#9CA3AF</color>
+    <color name="stroke_dark">#2D3345</color>
+
+    <color name="amoled_background">#000000</color>
+
+    <color name="error">#EF4444</color>
+    <color name="success">#10B981</color>
+
+    <color name="bottom_nav_active">#4158D0</color>
+    <color name="bottom_nav_inactive">#9CA3AF</color>
+    <color name="bottom_nav_bg">#CC1A1E2A</color>
+    <color name="icon_trending">#4158D0</color>
+    <color name="icon_top">#C850C0</color>
+    <color name="icon_continue">#4158D0</color>
+    <color name="icon_recommend">#C850C0</color>
+
+    <color name="chip_bg">#2A3042</color>
+    <color name="chip_text">#D7DBFF</color>
+    <color name="genre_chip_bg">#2A3042</color>
+    <color name="genre_chip_text">#D7DBFF</color>
+    <color name="status_completed">#22C55E</color>
+    <color name="status_ongoing">#60A5FA</color>
+    <color name="status_upcoming">#F59E0B</color>
+    <color name="skeleton">#2D3345</color>
+    <color name="badge_overlay">#B3000000</color>
+    <color name="player_overlay_bg">#D9000000</color>
+
+    <color name="accent_blue">#60A5FA</color>
+    <color name="accent_blue_end">#22D3EE</color>
+    <color name="accent_purple">#A78BFA</color>
+    <color name="accent_purple_end">#E879F9</color>
+    <color name="accent_green">#4ADE80</color>
+    <color name="accent_green_end">#22C55E</color>
+    <color name="accent_red">#F87171</color>
+    <color name="accent_red_end">#FB7185</color>
+    <color name="accent_orange">#FB923C</color>
+    <color name="accent_orange_end">#FBBF24</color>
+</resources>

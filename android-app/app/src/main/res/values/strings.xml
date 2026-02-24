@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AniFlow</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="profile">Profile</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="top_anime">Top Anime</string>
+    <string name="rekomendasi">Rekomendasi</string>
+    <string name="search_hint">Cari anime, studio, atau karakter...</string>
+    <string name="no_results">Tidak ada hasil</string>
+    <string name="loading">Loading...</string>
+    <string name="error_load">Gagal memuat data</string>
+    <string name="pull_to_refresh">Pull to refresh</string>
+    <string name="episode">Episode</string>
+    <string name="play">Play</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="add_to_watchlist">Add to Watchlist</string>
+    <string name="remove_from_watchlist">Remove from Watchlist</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="settings">Settings</string>
+    <string name="history">History</string>
+    <string name="no_episode">No episodes available</string>
+</resources>

@@ -1,0 +1,8 @@
+{
+  "versionCode": 6,
+  "versionName": "1.2.0",
+  "force": false,
+  "title": "Update AniFlow tersedia",
+  "message": "Performa lebih stabil + perbaikan bug.",
+  "apkUrl": "https://github.com/USERNAME/REPO/releases/download/v1.2.0/AniFlow-debug.apk"
+}

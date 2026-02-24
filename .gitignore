@@ -1,0 +1,43 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temp / local workspace
+.tmp/
+tmp/
+*.tmp
+
+# Android / Gradle
+android-sdk/
+android-app/.gradle/
+android-app/**/build/
+android-app/local.properties
+android-app/*.iml
+android-app/.idea/
+
+# APK / artifacts
+*.apk
+*.aab
+
+# Java / Maven
+target/
+*.class
+
+# Node / Vercel
+node_modules/
+vercel-scraper/node_modules/
+vercel-scraper/.vercel/
+npm-debug.log*
+yarn-error.log*
+
+# Env / secrets
+.env
+.env.*
+*.keystore
+*.jks
+*.pem
+*.key
+
+android-sdk
