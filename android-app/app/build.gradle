@@ -10,8 +10,8 @@ android {
         applicationId "com.aniflow.app"
         minSdk 24
         targetSdk 34
-        versionCode 8
-        versionName "1.0.0.beta"
+        versionCode 9
+        versionName "1.0.1.beta"
         buildConfigField "String", "UPDATE_CONFIG_URL", "\"https://raw.githubusercontent.com/kimkirooffc/apkanime/main/update.json\""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

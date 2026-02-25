@@ -1,8 +1,8 @@
 {
-  "versionCode": 8,
-  "versionName": "1.0.0.beta",
-  "force": false,
-  "title": "AniFlow 1.0.0.beta tersedia",
-  "message": "Versi AniFlow 1.0.0.beta siap di-install.",
-  "apkUrl": "https://github.com/kimkirooffc/apkanime/releases/download/v1.0.0.beta/AniFlow-debug.apk"
+  "versionCode": 9,
+  "versionName": "1.0.1.beta",
+  "force": true,
+  "title": "Update wajib AniFlow 1.0.1.beta",
+  "message": "Perbaikan update popup dan stabilitas. Silakan update sekarang.",
+  "apkUrl": "https://github.com/kimkirooffc/apkanime/releases/download/v1.0.1.beta/AniFlow-debug.apk"
 }
