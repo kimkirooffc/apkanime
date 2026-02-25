@@ -318,18 +318,88 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/about_title"
+                        android:textColor="@color/onSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="About AniFlow"
+                        android:text="@string/about_app_label"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/aboutAppValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/about_app_value"
                         android:textColor="@color/onSurface"
                         android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Logout (opsional)"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/about_version_label"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/aboutVersionValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="-"
                         android:textColor="@color/onSurface"
                         android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/about_developer_label"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/aboutDeveloperValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/about_developer_value"
+                        android:textColor="@color/onSurface"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/about_license_label"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/aboutLicenseValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/about_license_value"
+                        android:textColor="@color/onSurface"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/aboutThirdPartyValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/about_third_party_value"
+                        android:textColor="@color/onSurfaceVariant"
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 

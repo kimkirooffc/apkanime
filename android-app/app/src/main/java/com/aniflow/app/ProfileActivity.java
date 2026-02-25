@@ -21,6 +21,9 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView watchlistCount;
     private TextView historyCount;
     private TextView downloadedCount;
+    private TextView aboutVersionValue;
+    private TextView aboutDeveloperValue;
+    private TextView aboutLicenseValue;
     private BottomNavigationView bottomNav;
 
     private SwitchMaterial themeSystemSwitch;
@@ -48,6 +51,9 @@ public class ProfileActivity extends AppCompatActivity {
         watchlistCount = findViewById(R.id.watchlistCount);
         historyCount = findViewById(R.id.historyCount);
         downloadedCount = findViewById(R.id.downloadedCount);
+        aboutVersionValue = findViewById(R.id.aboutVersionValue);
+        aboutDeveloperValue = findViewById(R.id.aboutDeveloperValue);
+        aboutLicenseValue = findViewById(R.id.aboutLicenseValue);
         bottomNav = findViewById(R.id.bottomNav);
 
         themeSystemSwitch = findViewById(R.id.themeSystemSwitch);
@@ -65,6 +71,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         setupThemeControls();
         syncThemeControls();
+        bindAboutSection();
         ThemeManager.applyAmoledSurfaceIfNeeded(this);
         NavigationHelper.bind(bottomNav, this, R.id.nav_profile);
     }
@@ -179,5 +186,11 @@ public class ProfileActivity extends AppCompatActivity {
             return ThemeManager.ACCENT_ORANGE;
         }
         return ThemeManager.ACCENT_PURPLE;
+    }
+
+    private void bindAboutSection() {
+        aboutVersionValue.setText(getString(R.string.about_version_value, BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE));
+        aboutDeveloperValue.setText(getString(R.string.about_developer_value));
+        aboutLicenseValue.setText(getString(R.string.about_license_value));
     }
 }
