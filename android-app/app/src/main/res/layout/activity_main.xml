@@ -49,6 +49,25 @@
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-black" />
 
+                        <TextView
+                            android:id="@+id/homeGreetingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/home_greeting_placeholder"
+                            android:textColor="@color/onSurface"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/homeDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/home_date_placeholder"
+                            android:textColor="@color/onSurfaceVariant"
+                            android:textSize="12sp" />
+
                     </LinearLayout>
 
                     <TextView

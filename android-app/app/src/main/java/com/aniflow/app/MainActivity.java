@@ -36,6 +36,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView topAnimeRecycler;
     private RecyclerView mixFeedRecycler;
     private TextView clockText;
+    private TextView homeGreetingText;
+    private TextView homeDateText;
     private TextView continueSectionTitle;
     private TextView animeQuickSectionTitle;
     private TextView mixFeedSectionTitle;
@@ -83,13 +86,13 @@ public class MainActivity extends AppCompatActivity {
     private int pendingRequests = 0;
     private boolean hasRequestError = false;
     private boolean updateDialogVisible = false;
+    private final SimpleDateFormat clockFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
+    private final SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd MMM yyyy", Locale.getDefault());
 
     private final Runnable clockTicker = new Runnable() {
         @Override
         public void run() {
-            if (clockText != null) {
-                clockText.setText(new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date()));
-            }
+            refreshHeaderInfo();
             uiHandler.postDelayed(this, 30_000);
         }
     };
@@ -131,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
         topAnimeRecycler = findViewById(R.id.topAnimeRecycler);
         mixFeedRecycler = findViewById(R.id.mixFeedRecycler);
         clockText = findViewById(R.id.clockText);
+        homeGreetingText = findViewById(R.id.homeGreetingText);
+        homeDateText = findViewById(R.id.homeDateText);
         continueSectionTitle = findViewById(R.id.continueSectionTitle);
         animeQuickSectionTitle = findViewById(R.id.animeQuickSectionTitle);
         mixFeedSectionTitle = findViewById(R.id.mixFeedSectionTitle);
@@ -140,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
         emptyState = findViewById(R.id.emptyState);
         errorState = findViewById(R.id.errorState);
         retryButton = findViewById(R.id.retryButton);
+        refreshHeaderInfo();
     }
 
     private void setupRecyclerViews() {
@@ -507,6 +513,42 @@ public class MainActivity extends AppCompatActivity {
             return fallback;
         }
         return cleaned;
+    }
+
+    private void refreshHeaderInfo() {
+        Date now = new Date();
+        if (clockText != null) {
+            clockText.setText(clockFormat.format(now));
+        }
+        if (homeDateText != null) {
+            homeDateText.setText(dateFormat.format(now));
+        }
+        if (homeGreetingText != null) {
+            homeGreetingText.setText(buildGreetingText(now));
+        }
+    }
+
+    private String buildGreetingText(Date now) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(now);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+
+        String period;
+        if (hour < 11) {
+            period = getString(R.string.home_period_morning);
+        } else if (hour < 15) {
+            period = getString(R.string.home_period_afternoon);
+        } else if (hour < 19) {
+            period = getString(R.string.home_period_evening);
+        } else {
+            period = getString(R.string.home_period_night);
+        }
+
+        return getString(
+            R.string.home_greeting_format,
+            period,
+            getString(R.string.home_greeting_default_user)
+        );
     }
 
     private void checkForAppUpdate(boolean force) {

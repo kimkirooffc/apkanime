@@ -8,6 +8,14 @@
     <string name="continue_watching">Continue Watching</string>
     <string name="top_anime">Top Anime</string>
     <string name="rekomendasi">Rekomendasi</string>
+    <string name="home_greeting_placeholder">Selamat datang, Guest User</string>
+    <string name="home_date_placeholder">Rabu, 25 Feb 2026</string>
+    <string name="home_greeting_format">Selamat %1$s, %2$s</string>
+    <string name="home_greeting_default_user">Guest User</string>
+    <string name="home_period_morning">pagi</string>
+    <string name="home_period_afternoon">siang</string>
+    <string name="home_period_evening">sore</string>
+    <string name="home_period_night">malam</string>
     <string name="search_hint">Cari anime, studio, atau karakter...</string>
     <string name="no_results">Tidak ada hasil</string>
     <string name="loading">Loading...</string>
